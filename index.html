@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇮🇳 India Unveiled: A Journey Through the 28 States</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <!-- EPIC Book Opening Scene -->
+    <div id="bookScene" class="book-scene">
+        <div class="scene-wrapper">
+            <!-- Ambient Light -->
+            <div class="ambient-light"></div>
+            
+            <!-- Book Cover (3D Closed) -->
+            <div id="bookCover" class="book-cover-3d">
+                <div class="book-container">
+                    <!-- Left Cover (Back) -->
+                    <div class="book-panel back-cover">
+                        <div class="back-content">
+                            <h2>Inside This Book</h2>
+                            <ul class="back-highlights">
+                                <li>🏛️ Geography & History</li>
+                                <li>🎭 Culture & Traditions</li>
+                                <li>🍜 Local Cuisine</li>
+                                <li>🏆 Notable Personalities</li>
+                                <li>🎨 Arts & Crafts</li>
+                                <li>🌿 Nature & Wildlife</li>
+                            </ul>
+                            <p class="back-footer">28 States • 2026 Edition</p>
+                        </div>
+                    </div>
+
+                    <!-- Spine -->
+                    <div class="book-spine">
+                        <div class="spine-label">India Unveiled</div>
+                    </div>
+
+                    <!-- Right Cover (Front) -->
+                    <div class="book-panel front-cover">
+                        <div class="cover-shine"></div>
+                        <div class="cover-decoration top-left">📍</div>
+                        <div class="cover-decoration top-right">🗺️</div>
+                        <div class="cover-decoration bottom-left">🏛️</div>
+                        <div class="cover-decoration bottom-right">🌏</div>
+                        
+                        <div class="cover-content">
+                            <div class="country-flag">🇮🇳</div>
+                            <h1 class="cover-title">India Unveiled</h1>
+                            <p class="cover-subtitle">A Journey Through the 28 States</p>
+                            <div class="cover-divider"></div>
+                            <p class="cover-description">Explore the rich tapestry of culture, history, and diversity</p>
+                            
+                            <div class="click-hint">
+                                <span class="hint-text">✨ CLICK TO OPEN ✨</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Book edge highlight -->
+                        <div class="book-edge"></div>
+                    </div>
+                </div>
+
+                <!-- Shadow under book -->
+                <div class="book-shadow"></div>
+            </div>
+
+            <!-- Light rays effect -->
+            <div class="light-rays"></div>
+        </div>
+    </div>
+
+    <!-- Main Application (Hidden initially) -->
+    <div id="appContainer" class="app-container hidden">
+        <!-- Top Navigation -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <button id="backBtn" class="nav-btn">← Back to Cover</button>
+            </div>
+            <div class="navbar-center">
+                <h2 class="page-title">🇮🇳 India Unveiled</h2>
+            </div>
+            <div class="navbar-right">
+                <span id="stateIndicator" class="state-indicator"></span>
+            </div>
+        </div>
+
+        <!-- State Selection Grid -->
+        <div id="stateGrid" class="state-grid">
+            <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Book Reader -->
+        <div id="bookReader" class="book-reader hidden">
+            <div class="book-wrapper">
+                <div class="book-spine"></div>
+                
+                <!-- Left Page -->
+                <div class="page left-page">
+                    <div class="page-content" id="leftPageContent"></div>
+                    <div class="page-number" id="leftPageNum"></div>
+                </div>
+                
+                <!-- Right Page -->
+                <div class="page right-page">
+                    <div class="page-content" id="rightPageContent"></div>
+                    <div class="page-number" id="rightPageNum"></div>
+                </div>
+                
+                <div class="book-shadow"></div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="reading-controls">
+                <button id="prevBtn" class="control-btn prev-btn">◀ Previous</button>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <button id="nextBtn" class="control-btn next-btn">Next ▶</button>
+            </div>
+
+            <!-- Close Reader Button -->
+            <button id="closeReaderBtn" class="close-reader-btn">✕ Back to States</button>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingSpinner" class="loading-spinner hidden">
+        <div class="spinner"></div>
+        <p>Loading your journey...</p>
+    </div>
+
+    <script src="states-data.js"></script>
+    <script src="book-engine.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
